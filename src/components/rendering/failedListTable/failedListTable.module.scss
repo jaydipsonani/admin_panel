@@ -1,0 +1,50 @@
+.tableHead{
+    background-color: #F7F9FC;
+}
+.collapseOpen{
+    background-color: #F7F9FC;
+}
+.checkbox{
+    width: 46px;
+}
+.id{
+    width: 48px;
+}
+.date{
+    width: 150px;
+}
+.AccountId{
+    width: 120px;
+}
+.name{
+    width: 200px;
+}
+.destination{
+    width: 150px;
+}
+.data{
+    width: 132.5px;
+}
+.days{
+    width: 132.5px;
+}
+.status{
+    width: 105px;
+}
+.headerCell{
+    display: flex;
+    align-items: center;
+    color: #687182;
+    // gap: 20px;
+}
+
+.collapseTable{
+    height: 133px;
+}
+.tableRow{
+    height: 48px;
+}
+.collapse-margin{
+    margin: 0px 16px 0px 16px
+}
+

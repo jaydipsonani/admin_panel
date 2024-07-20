@@ -1,0 +1,10 @@
+{
+  "thankyou": "Thank You!",
+  "sorry": "Sorry",
+  "formSubmitSuccess": "The form has been submitted successfully.",
+  "formSubmitError": "Something went wrong, try again.",
+  "newsletter": "Sign-Up to newsletters",
+  "fieldErrorMessage": "This field is required*",
+  "minLengthError": "Minimum {minLength} characters required.",
+  "maxLengthError": "Maximum {maxLength} characters required."
+}

@@ -1,0 +1,41 @@
+@import "../../../assets/styles/main.scss";
+
+.header {
+  height: 40px;
+ background-color:  getColorHex("black") !important;
+  background: getColorHex("white", 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style-type: none;
+    @include bottom-border-animation;
+    @include container-medium-1;
+  }
+}
+
+
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #cbbfbf; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #a7a2a2; 
+}

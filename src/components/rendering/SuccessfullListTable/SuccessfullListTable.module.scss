@@ -1,0 +1,97 @@
+.tableContainer {
+  border: none !important;
+}
+
+.tableHead {
+  background-color: #f7f9fc;
+}
+.collapseOpen {
+  background-color: #f7f9fc;
+}
+.checkbox {
+  width: 46px;
+}
+.collapse {
+  width: 36px;
+}
+.id {
+  width: 48px;
+}
+.date {
+  width: 150px;
+}
+.AccountId {
+  width: 120px;
+}
+.name {
+  width: 200px;
+}
+.destination {
+  width: 150px;
+}
+.data {
+  width: 114.5px;
+}
+.days {
+  width: 114.5px;
+}
+.status {
+  width: 105px;
+}
+
+.headerCell {
+  display: flex;
+  align-items: center;
+  //   gap: 5px;
+}
+.actualCost {
+  width: 206px;
+}
+
+.sellingPrice {
+  width: 206px;
+}
+.discount {
+  width: 206px;
+}
+.netIncome {
+  width: 206px;
+}
+.paymentType {
+  width: 206px;
+}
+
+.collapseTable {
+  height: 133px;
+}
+.collapseTable {
+  span {
+    color: #292d32;
+    font-family: "inter", sans-serif;
+  }
+}
+.collapseTable {
+  span {
+    color: #687182;
+  }
+}
+.mainTableRow {
+  height: 48px;
+}
+.expandRow {
+  background-color: #f7f9fc;
+}
+.tableRow {
+  height: 48px;
+}
+
+.collapseMargin {
+  margin: 0px 16px 0px 16px;
+}
+
+.emptySpace {
+  width: 46px;
+}
+.MuiTableCell-root {
+  padding: 0px !important;
+}

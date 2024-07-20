@@ -1,0 +1,97 @@
+@import "mixins";
+@import "typography";
+@import "variables";
+
+.button {
+  @include transition-3s;
+  padding: 27.5px 20px;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: getColorHex("orange");
+  color: getColorHex("white");
+  border: none;
+  min-width: rem(174);
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  border-radius: 100px;
+  @include inter700;
+
+  @include sm {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+
+  &.solid {
+    background-color: getColorHex("orange");
+    color: getColorHex("white");
+    border: rem(1) solid getColorHex("orange");
+
+    &:hover {
+      background-color: getColorHex("white");
+      color: getColorHex("orange");
+    }
+
+    &.orange {
+      background-color: getColorHex("orange");
+      border: rem(1) solid getColorHex("orange");
+
+      &:hover {
+        background-color: getColorHex("white");
+        border: rem(1) solid getColorHex("orange");
+      }
+    }
+
+    &.black {
+      background-color: getColorHex("black");
+      border: rem(1) solid getColorHex("black");
+
+      &:hover {
+        background-color: getColorHex("white");
+        border: rem(1) solid getColorHex("white");
+
+      }
+    }
+  }
+
+  &.transparent {
+    border: 4px solid transparent;
+    color: getColorHex("black");
+    border-color: getColorHex("orange");
+    background-color: transparent;
+
+    &:hover {
+      color: getColorHex("white");
+      background-color: getColorHex("orange");
+    }
+
+    &.orange {
+      border-color: getColorHex("orange");
+      color: getColorHex("black");
+
+      &:hover {
+        background-color: getColorHex("orange");
+        color: getColorHex("white");
+      }
+    }
+
+    &.white {
+      color: getColorHex("black");
+      border-color: getColorHex("black");
+
+      &:hover {
+        color: getColorHex("white");
+        background-color: getColorHex("black");
+      }
+    }
+  }
+
+  &:disabled,
+  &.disabled {
+    opacity: 0.4;
+    pointer-events: none;
+    cursor: default;
+  }
+}

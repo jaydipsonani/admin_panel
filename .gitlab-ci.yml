@@ -1,0 +1,38 @@
+image: alpine:latest
+stages:
+  - staging
+  - main
+  
+staging:
+  stage: staging
+  before_script:
+    - 'command -v ssh-agent >/dev/null || ( apk add --update openssh )' 
+    - eval $(ssh-agent -s)
+    - echo "$WAOSIM_PROD_SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    - ssh-keyscan $WAOSIM_PROD_SERVER >> ~/.ssh/known_hosts
+    - chmod 644 ~/.ssh/known_hosts
+  script:
+    - ssh $WAOSIM_PROD_USER@$WAOSIM_PROD_SERVER "who"
+    - ssh $WAOSIM_PROD_USER@$WAOSIM_PROD_SERVER "cd $WAOSIM_STAGE_FRONTEND && git pull && npm install && npm run build && pm2 restart 0 && pm2 save && sudo systemctl reload nginx.service && exit"
+  only:
+    - staging
+  when: manual
+
+main:
+  stage: main
+  before_script:
+    - 'command -v ssh-agent >/dev/null || ( apk add --update openssh )' 
+    - eval $(ssh-agent -s)
+    - echo "$WAOSIM_PROD_SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    - ssh-keyscan $WAOSIM_PROD_SERVER >> ~/.ssh/known_hosts
+    - chmod 644 ~/.ssh/known_hosts
+  script:
+    - ssh $WAOSIM_PROD_USER@$WAOSIM_PROD_SERVER "who"
+    - ssh $WAOSIM_PROD_USER@$WAOSIM_PROD_SERVER "cd $WAOSIM_PROD_FRONTEND && git pull && npm install && npm run build && pm2 restart 9 && pm2 save && sudo systemctl reload nginx.service && exit"
+  only:
+    - main
+  when: manual

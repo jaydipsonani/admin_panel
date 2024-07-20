@@ -1,0 +1,245 @@
+@import "../../../../assets/styles/main.scss";
+
+.signupFormMain {
+    padding-top: 30px;
+    .signupForm {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      .formInput {
+        position: relative;
+  
+        label {
+          width: 100%;
+          padding-bottom: 10px;
+          @include inter700;
+          font-size: 20px;
+          line-height: normal;
+          color:#000;
+          @include lg {
+            font-size: 18px;
+          }
+        }
+        input {
+          width: 100%;
+          height: 60px;
+          padding: 15px 29px 15px 64px;
+          border-radius: 62px;
+          border: 3px solid rgba(255, 255, 255, 0.16);
+          background: getColorHex("white");
+          @include inter400;
+          color: getColorHex("black");
+          &::placeholder {
+            color: getColorHex("placeholder");
+            @include inter400;
+            font-size: 20px;
+            line-height: 20px;
+          
+          }
+          &:focus {
+            border-color: getColorHex("orange") !important;
+            box-shadow: unset !important;
+          }
+        }
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+        input[type="number"] {
+          -moz-appearance: textfield;
+        }
+        .inputTextIcon {
+          position: absolute;
+          top: 68%;
+          left: 6.5%;
+          width: 45px;
+          height: 45px;
+          transform: translate(-50%, -50%);
+  
+          img {
+            height: 100%;
+            width: 100%;
+          }
+          @include lg {
+            left: 8%;
+          }
+        }
+        .paaswordHideShow {
+          position: absolute;
+          top: 68%;
+          right: 2%;
+          width: 25px;
+          height: 25px;
+          transform: translate(-50%, -50%);
+          cursor: pointer;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+  
+      .tacbox {
+        display: flex;
+        gap: 10px;
+        align-items: flex-start;
+        position: relative;
+        input {
+          position: absolute;
+          z-index: 9;
+          width: 26px;
+          height: 26px;
+          opacity: 0;
+        }
+        input[id="checkbox"] {
+          padding: 0;
+          height: initial;
+          width: initial;
+          margin-bottom: 0;
+          cursor: pointer;
+        }
+        input:checked + label:after {
+          content: "";
+          content: "";
+          display: block;
+          position: absolute;
+          top: 6px;
+          left: 11px;
+          width: 6px;
+          height: 14px;
+          border: solid getColorHex("orange");
+          border-width: 0 2px 2px 0;
+          transform: rotate(45deg);
+        }
+  
+        label:before {
+          content: "";
+          -webkit-appearance: none;
+          background-color: getColorHex("white");
+          border: 1px solid getColorHex("orange");
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+            inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+          padding: 12px;
+          display: inline-block;
+          position: relative;
+          vertical-align: middle;
+          cursor: pointer;
+          margin-right: 5px;
+          border-radius: 5px;
+        }
+        label {
+          font-size: 20px;
+          line-height: 24.2px;
+          color: getColorHex("black");
+          position: relative;
+          cursor: pointer;
+        }
+        .inputcheckBox {
+          font-size: 20px;
+          line-height: 24.2px;
+          @include inter400;
+          @include lg {
+            font-size: 18px;
+          }
+  
+          span {
+            color: getColorHex("orange");
+          }
+        }
+      }
+      .formOrOption {
+        font-size: 20px;
+        line-height: 24.2px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          background-color: getColorHex("orange");
+          width: 78px;
+          height: 1px;
+          top: 50%;
+          left: 26%;
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          background-color: getColorHex("orange");
+          width: 78px;
+          height: 1px;
+          top: 50%;
+          right: 26%;
+        }
+      }
+      .signUpGoggleNumber {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+        .signupWithMedia {
+          width: 50%;
+          padding: 13px 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 7px;
+          border-radius: 10px;
+          border: 1px solid #f47500;
+          background: #fff;
+          cursor: pointer;
+          @include lg {
+            padding: 10px;
+          }
+          .IconImage {
+            width: 24px;
+  
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: contain;
+            }
+          }
+          h2 {
+            font-size: 14px;
+            line-height: normal;
+            @include lg {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+      .conditionsLink {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        height: 24px;
+        @include lg {
+          gap: 15px;
+        }
+        .termsCondition {
+          font-size: 20px;
+          width: 50%;
+          text-align: right;
+          @include lg {
+            font-size: 16px;
+          }
+        }
+        .priavcyPolicy {
+          font-size: 20px;
+          width: 50%;
+          text-align: left;
+          @include lg {
+            font-size: 16px;
+          }
+        }
+        .centerLine {
+          width: 1px;
+          height: 21px;
+          background-color: getColorHex("orange");
+        }
+      }
+    }
+  }
+  

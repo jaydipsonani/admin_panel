@@ -1,0 +1,10 @@
+{
+  "thankyou": "شكرًا لك!",
+  "sorry": "آسف",
+  "formSubmitSuccess": "تم إرسال النموذج بنجاح.",
+  "formSubmitError": "حدث خطأ ما حاول مرة أخرى.",
+  "newsletter": "الاشتراك في النشرات الإخبارية",
+  "fieldErrorMessage": "هذه الخانة مطلوبه*",
+  "minLengthError": "الحد الأدنى المطلوب هو {minLength} من الأحرف.",
+  "maxLengthError": "الحد الأقصى لعدد الأحرف {maxLength} مطلوب."
+}

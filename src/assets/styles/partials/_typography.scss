@@ -1,0 +1,26 @@
+
+
+@mixin inter400 {
+  font-family: var(--font-inter-regular), sans-serif !important;
+  font-variant-numeric: lining-nums proportional-nums;
+}
+
+@mixin inter500 {
+  font-family: var(--font-inter-medium), sans-serif !important;
+  font-variant-numeric: lining-nums proportional-nums;
+}
+
+@mixin inter600 {  //defalt
+  font-family: var(--font-inter-semibold), sans-serif !important;
+  font-variant-numeric: lining-nums proportional-nums;
+}
+
+@mixin inter700 {
+  font-family: var(--font-inter-bold), sans-serif !important;
+  font-variant-numeric: lining-nums proportional-nums;
+}
+
+@mixin kabutHitam400 {
+  font-family: var(--font-kabutHitam-regular), sans-serif !important;
+  font-variant-numeric: lining-nums proportional-nums;
+}

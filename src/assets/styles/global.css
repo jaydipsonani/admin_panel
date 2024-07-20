@@ -1,0 +1,99 @@
+html {
+  box-sizing: border-box;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  background-color: getColorHex("white");
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+*:focus {
+  outline: none;
+}
+
+:lang(ar) * {
+  letter-spacing: 0 !important;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
+
+a {
+  color: unset !important;
+  text-decoration: none !important;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  margin: 0;
+  color: #686868;
+}
+
+strong {
+  font-weight: bold;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+[scroll="false"] {
+  overflow: hidden;
+}
+
+.react-loading-skeleton {
+  border-radius: 0;
+  line-height: 2;
+}
+
+.relative-position {
+  position: relative;
+}
+
+.cursorPointer {
+  cursor: pointer;
+}
+
+.cursorGrabbing {
+  cursor: grabbing;
+}
+
+.cursorGrab {
+  cursor: grab;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 !important;
+}
+
+.queryHighlight {
+  background-color: #fff5d3;
+  /* Or any other desired style */
+  padding: 8px 5px;
+}
+
+ul {
+  list-style-type: none;
+}
+

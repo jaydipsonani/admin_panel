@@ -1,0 +1,36 @@
+
+.navbar{
+    margin-top: 10px;
+      display: flex;
+      justify-content: space-between;
+      .buttons{
+          button{
+              margin-left: 10px;
+              border: none;
+              background-color: #FFFFFF;
+              height: 38px;
+              border-radius: 67px;
+              padding: 4px 14px 4px 14px; 
+              font-size: 14px;          
+          }
+      }
+      .downloadButton {
+          font-size: 14px;
+          display: flex;
+          align-items: center;
+          width: 112px;
+          height: 38px;
+          padding: 4px 14px 4px 14px;
+          background-color: white;
+          color: #000000;
+          border: 1px solid #F47500;
+          border-radius: 10px;
+          cursor: pointer;
+          gap: 5px;
+        }
+
+        .active {
+          background-color: #F47500 !important;
+          color: #FFFFFF;
+        }
+      }

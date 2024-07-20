@@ -1,0 +1,114 @@
+.container{
+    margin: 0px 30px 0px 30px;
+}
+
+// .mainPage{
+//     width: 1120px;
+// }
+
+.header{
+    height: 39px;
+    font-size: 32px;
+    font-weight: 400;
+    margin-top: 23px;
+
+}
+.horizontalLine{
+  margin-top: 33px;
+}
+
+.navbar{
+  margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    .buttons{
+        button{
+            margin-left: 10px;
+            border: none;
+            background-color: #FFFFFF;
+            height: 38px;
+            border-radius: 67px;
+            padding: 4px 14px 4px 14px; 
+            font-size: 14px;          
+        }
+    }
+    .downloadButton {
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        width: 112px;
+        height: 38px;
+        padding: 4px 14px 4px 14px;
+        background-color: white;
+        color: #1A932E;
+        border: 1px solid #1A932E;
+        border-radius: 10px;
+        cursor: pointer;
+        gap: 5px;
+      }
+      .active {
+        background-color: #F47500 !important;
+        color: #FFFFFF;
+      }
+    }
+
+    .statesContainer {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        gap: 24px;
+
+        .box {
+          display: flex;
+          align-items: center;
+          width: 357.33px;
+          height: 100px;
+          background-color: white;
+          border-radius: 10px;
+          padding: 20px;
+
+          &:nth-of-type(3n-2) .image {
+            background: linear-gradient(45deg, #A3BDED, #6991C7);
+          }
+      
+          &:nth-of-type(3n-1) .image {
+            background: linear-gradient(45deg, #868F96, #596164);
+          }
+      
+          &:nth-of-type(3n) .image {
+            background: linear-gradient(45deg, #FF6968, #FFA3A3);
+          }
+
+            .image {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background-color: #6991C7;
+              height: 60px;
+              width: 60px;
+              border-radius: 10px;
+      
+            }
+
+        }
+
+
+      }
+      
+      .boxContent {
+          margin-left: 20px;
+          gap: 10px;
+        h6 {
+          font-size: 12px;
+          font-weight: 500;
+          color: #888;
+        }
+        h5 {
+          font-size: 18px;
+          font-weight: 700;
+        }
+      }
+      
+      
+       

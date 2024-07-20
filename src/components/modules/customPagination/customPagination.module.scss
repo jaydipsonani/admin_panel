@@ -1,0 +1,38 @@
+.customPagination {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 16px;
+  }
+  
+  .paginationControls {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    span{
+        color:#687182;
+        font-weight: 500;
+    }
+  }
+  
+  .selectMenu {
+
+    select{
+      border: none !important;
+      color: #687182;
+    }
+  
+
+  }
+  .selectMenu{
+     margin-right: 40px; 
+    color: #687182;
+  }
+  
+  .paginationInfo {
+    margin-right: auto;
+    span{
+      color: #687182;
+    }
+  }
+  

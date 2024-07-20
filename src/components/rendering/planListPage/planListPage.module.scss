@@ -1,0 +1,66 @@
+.container{
+    margin-left: 30px;
+    margin-right: 30px;
+
+    .mainHeader{
+        // width: 1120px;
+        height: 48px;
+        margin-top: 23px;
+        // margin-left: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .header{
+
+            color: #000606;
+            width: 521px;
+            height: 39px;
+            font-weight: 400;
+            font-size: 32px;
+        }
+    }
+}
+
+.searchContainer {
+    display: flex;
+    align-items: center;
+    background-color: #FAF9F6;
+    padding: 10px 15px;
+    border-radius: 25px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    // max-width: 599px;
+    height: 48px;
+    margin: 0 auto;
+    .searchIcon {
+      color: #A0AEC0; 
+      height: 22px;
+      width: 22px;
+      margin-right: 14px;
+    }
+
+    .searchInput {
+      border: none;
+      outline: none;
+    //   width: 599px;
+    width: 420px;
+      font-size: 16px;
+      color: #4A5568;
+      background: none;
+    }
+    .searchInput::placeholder {
+      color: rgba(6, 6, 6, 0.4); 
+    }
+  }
+
+  .horizontalLine{
+    margin-top: 23px;
+  }
+
+
+.planListTable {
+  margin-top: 20px;
+  height: 614px;
+  border-radius: 14px;
+  padding: 18px;
+  background-color: #ffffff;
+}
